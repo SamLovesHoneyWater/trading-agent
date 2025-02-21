@@ -18,8 +18,6 @@ Second, go to Alpaca's website and apply for a trading account. Then obtain the 
 
 You're good to go! Run ```python src/main.py``` to test it on your paper trade account!
 
-Disclaimer: This code is currently only tested on toy examples, and uses a dummy strategy (see line 131 in src/tradingModule.py). DO NOT trade real money with it!
-
 ## Explanations
 
 Currently, we have a toy price generator that gradually increases the price of toy tickers.
@@ -40,3 +38,7 @@ One slow process would not block other processes, speeding up the entire applica
 One drawback is that the number of ports you need grows linearly with number of tickers you want to trade.
 About $2n$, to be specific.
 The code puts ZeroMQ sockets on ports ranged from 13140 to 13399. Make sure those ports are clear -- they usually are, as per https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers.
+
+## Disclaimer
+
+This software is for educational purposes only. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS. Do not risk money which you are afraid to lose. This code is only tested on toy examples. There might be bugs in the code - this software DOES NOT come with ANY warranty.
